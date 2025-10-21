@@ -8,10 +8,9 @@ while order != "done":
     order = input("What would you like to order? (type 'done' to finish): ")
 print("Thanks for your order!") """
 
-number_game = ""
+number_game = 0
 import random
-x = random.randint(1,10)
+x = random.randint(1, 10)
 while number_game != x:
-    x = input("guess the number i am thinking of. ")
-    break if input == x:
-        print("yayayyayayyay")
+    number_game = int(input("guess the number i am thinking of. "))
+print("correct")
