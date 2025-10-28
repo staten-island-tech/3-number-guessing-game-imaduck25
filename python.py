@@ -13,10 +13,10 @@ import random
 x = random.randint(1, 10)
 guess_history = []
 while number_game != x:
-    print [guess_history.index]
     number_game = int(input("guess the number i am thinking of. "))
     if number_game > x:
         print("too high")
     if number_game < x: 
         print("too low")
 print("correct")
+print(guess_history)("numbers guessed")
