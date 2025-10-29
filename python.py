@@ -12,15 +12,16 @@ number_game = 0
 import random
 x = random.randint(1, 10)
 guess_history = []
+history = 0
 while number_game != x:
     number_game = int(input("guess the number i am thinking of. "))
+    guess_history.append(number_game)
     if number_game > x:
         print("too high")
         print(guess_history)
-        guess_history = [number_game], [number_game]
-    if number_game < x: 
+    if number_game < x:
         print("too low")
         print(guess_history)
-        guess_history = [number_game]
 print("correct")
-print(guess_history)
+for i in guess_history:
+    print(guess_history)
